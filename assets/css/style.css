@@ -123,7 +123,7 @@ body {
 
     width: 90%;
 
-    max-width: 960px;
+    max-width: 1200px;
 
     margin: 0 auto;
 
@@ -578,26 +578,16 @@ body {
 .rodape {
 
     margin-top: 16px;
-
- 
-
     padding: 32px 16px;
-
- 
-
     text-align: center;
-
- 
-
     background-color: #ffffff;
-
- 
-
     border-top: 1px solid #e5e7eb;
-
- 
-
     color: #64748b;
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 8px 24px;
 
 }
 
@@ -605,10 +595,7 @@ body {
 
 .rodape p {
 
-    margin: 10px 0;
-
- 
-
+    margin: 0;
     font-size: 13px;
 
 }
@@ -670,7 +657,9 @@ p {
        align-items:center;
        gap: 12px 24px;
        text-align: left;
-        
+    }
 
+    .navegacao {
+        justify-content:flex-end;
     }
 }
