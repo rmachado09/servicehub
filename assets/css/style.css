@@ -68,12 +68,10 @@ body {
 .navegacao {
 
     margin-top: 24px;
-
-    justify-content: center;
-
     display:flex;
     flex-wrap:wrap;
     gap: 8px 20px;
+    justify-content:center;
 
 
 }
@@ -152,10 +150,17 @@ body {
 
     margin-bottom: 48px;
 
-}
-.indicador {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 16px;
 
-    margin-bottom: 16px;
+}
+
+.visao-geral h2 {
+    grid-column: 1 / -1;
+}
+
+.indicador {
 
     padding: 28px;
 
