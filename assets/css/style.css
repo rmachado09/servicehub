@@ -261,6 +261,7 @@ body {
     box-shadow: 0 4px 14px rgb(15 23 42 / 0.05);
 
 }
+
 .pedido {
 
     margin-bottom: 20px;
@@ -281,7 +282,11 @@ body {
 
        box-shadow 0.2s ease;
 
+    display: flex;
+    flex-direction: column;   
+
 }
+
 .pedido:hover {
 
     transform: translateY(-2px);
@@ -338,11 +343,18 @@ body {
     font-size: 16px;
 
 }
-badge {
+
+.etiquetas {
+
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+
+}
+
+.badge {
 
     display: inline-block;
-
-    margin: 3px 5px 3px 0;
 
     padding: 5px 11px;
 
@@ -380,6 +392,18 @@ badge {
     color: #b91c1c;
 
 }
+
+.pedidos {
+
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 20px;
+}
+
+.pedidos h2, .pedidos .ver-todos {
+    grid-column: 1 / -1;
+}
+
 .dados-pedido {
 
     margin-top: 20px;
@@ -387,6 +411,10 @@ badge {
     padding-top: 16px;
 
     border-top: 1px solid #eef2f7;
+
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px 24px;
 
 }
 
@@ -399,6 +427,10 @@ badge {
     color: #64748b;
 
     font-size: 14px;
+
+    flex: 1 1 140px;
+    min-width: 0;
+    overflow-wrap: anywhere;
 
 }
 
@@ -425,7 +457,9 @@ badge {
 
     display: inline-block;
 
-    margin-top: 20px;
+    margin-top: auto;
+
+    align-self: flex-start;
 
     padding: 11px 18px;
 
